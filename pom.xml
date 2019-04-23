@@ -11,7 +11,7 @@
 		<module>department-service</module>
 		<module>organization-service</module>
 		<module>gateway-service</module>
-        <module>employee-service-client</module>
+        <module>employee-service-api</module>
     </modules>
 	
 </project>
