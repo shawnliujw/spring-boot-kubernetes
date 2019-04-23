@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 @Configuration
-@ComponentScan(basePackages = "client")
+@EnableAutoConfiguration
 public class MyConfiguration {
+
 }
