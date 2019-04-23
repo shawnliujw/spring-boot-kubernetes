@@ -2,6 +2,7 @@ package pl.piomin.services.organization.controller;
 
 import java.util.Optional;
 
+import client.EmployeeClient;
 import client.MyConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,7 +27,7 @@ public class OrganizationController {
 	@Autowired
 	DepartmentClient departmentClient;
 	@Autowired
-	MyConfiguration.EmployeeClient employeeClient;
+	EmployeeClient employeeClient;
 	
 	@PostMapping
 	public Organization add(@RequestBody Organization organization) {

@@ -21,7 +21,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableFeignClients
 @EnableMongoRepositories
 @EnableSwagger2
-@Import(MyConfiguration.class)
 //@RibbonClient(name = "employee")
 public class DepartmentApplication {
 	
