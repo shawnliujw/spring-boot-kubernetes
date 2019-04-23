@@ -16,9 +16,7 @@ public class RequestResponseLoggingFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
 
         System.out.println(httpServletRequest.getRequestURI());
-        System.out.println(httpServletRequest.getRequestURL());
-        System.out.println(httpServletRequest.getContextPath());
-        System.out.println(httpServletRequest.getContextPath());
+        System.out.println("contextPath:"+httpServletRequest.getContextPath());
         doFilter(httpServletRequest,httpServletResponse,filterChain);
     }
 }

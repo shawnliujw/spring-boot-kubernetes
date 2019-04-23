@@ -1,3 +1,6 @@
+server:
+  servlet:
+    contextPath: /employee
 spring:
   application:
     name: employee
