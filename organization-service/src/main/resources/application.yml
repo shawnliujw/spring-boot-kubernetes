@@ -1,6 +1,6 @@
 server:
   servlet:
-    contextPath: /department
+    contextPath: /organization
 spring:
   application:
     name: organization
