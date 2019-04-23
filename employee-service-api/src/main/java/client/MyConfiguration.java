@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @EnableFeignClients
 public class MyConfiguration {
 
-    @Bean
+    @Autowired
     public  void test() {
         System.out.println("=======================");
         System.out.println("=======================");
