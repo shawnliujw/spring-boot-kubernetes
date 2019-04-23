@@ -3,10 +3,10 @@ package pl.piomin.services.department.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import client.Employee;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
-import pl.piomin.services.department.client.Employee;
 
 @Document(collection = "department")
 public class Department {
