@@ -2,4 +2,4 @@
 /.settings/
 .idea
 *.iml
-target/git
+target/
