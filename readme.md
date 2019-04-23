@@ -1,4 +1,4 @@
-
+## Quick sample for building microservice with Spring Boot + Kubernetes
 
 ## How To Deploy
 1. $ kubectl create clusterrolebinding admin --clusterrole=cluster-admin --serviceaccount=default:default
