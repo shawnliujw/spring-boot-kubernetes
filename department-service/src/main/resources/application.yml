@@ -1,7 +1,6 @@
 server:
   servlet:
     contextPath: /department
-debug: enable
 spring:
   application:
     name: department
