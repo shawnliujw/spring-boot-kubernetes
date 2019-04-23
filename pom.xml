@@ -12,6 +12,7 @@
 		<module>organization-service</module>
 		<module>gateway-service</module>
         <module>employee-service-api</module>
+        <module>department-service-api</module>
     </modules>
 	
 </project>

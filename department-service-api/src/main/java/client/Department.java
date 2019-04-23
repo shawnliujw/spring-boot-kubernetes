@@ -1,4 +1,4 @@
-package pl.piomin.services.department.model;
+package client;
 
 import java.util.ArrayList;
 import java.util.List;
