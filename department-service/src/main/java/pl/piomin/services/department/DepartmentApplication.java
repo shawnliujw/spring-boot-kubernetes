@@ -1,10 +1,9 @@
 package pl.piomin.services.department;
 
-import client.MyConfiguration;
+import client.EmployeeServiceFeignConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
@@ -17,9 +16,10 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@EnableDiscoveryClient
 @EnableMongoRepositories
 @EnableSwagger2
-@Import(MyConfiguration.class)
+@Import(EmployeeServiceFeignConfiguration.class)
 //@RibbonClient(name = "employee")
 public class DepartmentApplication {
 	

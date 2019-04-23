@@ -1,1 +1,1 @@
-#org.springframework.boot.autoconfigure.EnableAutoConfiguration=client.MyConfiguration
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=client.EmployeeServiceFeignConfiguration
