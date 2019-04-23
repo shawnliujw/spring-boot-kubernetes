@@ -3,7 +3,7 @@ package pl.piomin.services.department.controller;
 import java.util.List;
 
 import client.Employee;
-import client.EmployeeClient;
+import client.MyConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class DepartmentController {
 	@Autowired
 	DepartmentRepository repository;
 	@Autowired
-	EmployeeClient employeeClient;
+	MyConfiguration.EmployeeClient employeeClient;
 
 	@GetMapping("/feign")
 	public List<Employee> listRest() {

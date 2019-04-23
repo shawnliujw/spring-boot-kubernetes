@@ -2,7 +2,7 @@ package pl.piomin.services.organization.controller;
 
 import java.util.Optional;
 
-import client.EmployeeClient;
+import client.MyConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,7 @@ public class OrganizationController {
 	@Autowired
 	DepartmentClient departmentClient;
 	@Autowired
-	EmployeeClient employeeClient;
+	MyConfiguration.EmployeeClient employeeClient;
 	
 	@PostMapping
 	public Organization add(@RequestBody Organization organization) {
