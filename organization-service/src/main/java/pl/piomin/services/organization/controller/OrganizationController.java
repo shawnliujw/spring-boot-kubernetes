@@ -2,6 +2,7 @@ package pl.piomin.services.organization.controller;
 
 import java.util.Optional;
 
+import client.DepartmentClient;
 import client.EmployeeClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import pl.piomin.services.organization.client.DepartmentClient;
 import pl.piomin.services.organization.model.Organization;
 import pl.piomin.services.organization.repository.OrganizationRepository;
 

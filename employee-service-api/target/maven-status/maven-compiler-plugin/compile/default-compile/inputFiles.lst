@@ -1,2 +1,3 @@
+/Users/liujianwei/code/patsnap/sample-spring-microservices-new/employee-service-api/src/main/java/client/EmployeeClient.java
 /Users/liujianwei/code/patsnap/sample-spring-microservices-new/employee-service-api/src/main/java/client/Employee.java
-/Users/liujianwei/code/patsnap/sample-spring-microservices-new/employee-service-api/src/main/java/client/MyConfiguration.java
+/Users/liujianwei/code/patsnap/sample-spring-microservices-new/employee-service-api/src/main/java/client/EmployeeServiceFeignConfiguration.java
