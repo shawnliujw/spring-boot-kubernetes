@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: department
-        image: registry.cn-hangzhou.aliyuncs.com/shawn_private/department:1.1
+        image: registry-vpc.cn-hangzhou.aliyuncs.com/shawn_private/department:1.1
         ports:
         - containerPort: 8080
         env:
