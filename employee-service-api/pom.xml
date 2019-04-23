@@ -40,6 +40,10 @@
             <artifactId>spring-cloud-starter-kubernetes-ribbon</artifactId>
             <version>0.3.0.BUILD-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
