@@ -23,32 +23,24 @@ kubectl create clusterrolebinding permissive-binding \
 5. `bash deploy.sh`
 6. run `kubectl cluster-info` to get your cluster ip
 7. add host to `/etc/hosts` with:
-   ```javascript
-   <cluster_ip>  micro.info
-    ```
+   `<cluster_ip>  micro.info`
 
 ## How To Test
-1. create department:
-   ```javascript
-   curl -d '{"organizationId":1,"id":2,"name":"core"}' -H 'Content-Type:application/json' micro.info/department```
+1. Init Data:  
+   `curl -d '{"id":1,"id":1,"name":"company name","address":"company address"}' -H 'Content-Type:application/json' micro.info/organization` 
    
-2. create employee:
-   ```javascript
-   curl -d '{"organizationId":1,"id":2,"name":"core"}' -H 'Content-Type:application/json' micro.info/employee
-    ```
+   `curl -d '{"organizationId":1,"id":1,"name":"department name"}' -H 'Content-Type:application/json' micro.info/department` 
+   
+   `curl -d '{"organizationId":1,"departmentId":1,"id":1,"name":"employee"}' -H 'Content-Type:application/json' micro.info/employee` . 
     
-3. check result:
-   ```javascript
-    curl micro.info/employee
-    ```    
-    ```javascript
-     curl micro.info/department
-    ```  
+2. check result:  
+
+    `curl micro.info/employee/1` . 
+   
+    `curl micro.info/department/1` . 
     
-4. check FeignClient works:
-   ```javascript
-    curl micro.info/department/organization/1/with-employees
-    ```      
+    `curl micro.info/department/organization/1/with-employees`
+    
 ## How To Debug  With Telepresence
 [Install Telepresence Before Start](https://www.telepresence.io/reference/install)
 
