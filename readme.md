@@ -6,7 +6,7 @@ This project will show you how to setup kubernetes cluster by kubeadm , deploy s
 See [Setup Kubernetes By Kubeadm](./kubeadm/setup.md)
 ## Preparation  
 * create cluster role  
-`$ kubectl create clusterrolebinding admin --clusterrole=cluster-admin --serviceaccount=default:default` 
+`kubectl create clusterrolebinding admin --clusterrole=cluster-admin --serviceaccount=default:default` 
 * Init mongodb  
 `bash init-mongodb.sh`  
 * Prepare Ingress  
