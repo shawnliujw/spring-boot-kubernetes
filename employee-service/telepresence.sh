@@ -3,15 +3,17 @@
 telepresence \
     --mount /tmp/known \
     --swap-deployment employee \
+    --env-json tele_env.json \
     --docker-run \
     --rm \
     -v $(pwd):/build \
     -v $HOME/.m2/repository:/m3 \
     -v=/tmp/known/var/run/secrets:/var/run/secrets \
     -p 8080:8080 \
-    maven:3.6-jdk-8-alpine \
+    -p 5005:5005 \
+    -e MAVEN_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 \
+    maven:3-jdk-8  \
         mvn \
-            Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n" \
             -Dmaven.repo.local=/m3 \
             -f /build \
             spring-boot:run
