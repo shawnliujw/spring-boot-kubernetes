@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: gateway
-        image: registry-vpc.cn-hangzhou.aliyuncs.com/shawn_private/gateway:1.0
+        image: registry.cn-hangzhou.aliyuncs.com/shawn_private/gateway:1.0
         ports:
         - containerPort: 8080
 ---

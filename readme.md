@@ -3,6 +3,16 @@
 ## Setup Kubernetes Cluster
 See [Setup Kubernetes By Kubeadm](./kubeadm/setup.md)
 
+**Note**
+create account first:  
+```javascript
+kubectl create clusterrolebinding permissive-binding \
+  --clusterrole=cluster-admin \
+  --user=admin \
+  --user=kubelet \
+  --group=system:serviceaccounts
+```
+
 ## How To Deploy
 1. $ kubectl create clusterrolebinding admin --clusterrole=cluster-admin --serviceaccount=default:default
 2. `mvn clean install`

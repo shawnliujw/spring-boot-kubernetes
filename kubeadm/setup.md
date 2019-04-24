@@ -85,3 +85,5 @@ Run `kubectl proxy`
 access `http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/`  
 use the token generated above to login
 
+**Configure Docker**  
+`kubectl create secret docker-registry regcred --docker-server=<your-registry-server> --docker-username=<your-name> --docker-password=<your-pword> --docker-email=<your-email>`
