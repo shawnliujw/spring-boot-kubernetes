@@ -3,7 +3,6 @@
 telepresence \
     --mount /tmp/known \
     --swap-deployment employee \
-    --env-json tele_env.json \
     --docker-run \
     --rm \
     -v $(pwd):/build \

@@ -2,6 +2,7 @@
 /.settings/
 .idea
 *.iml
-target
+target/
+*.json
 
 *.log
