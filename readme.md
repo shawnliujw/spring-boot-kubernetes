@@ -14,7 +14,7 @@ See [Setup Kubernetes By Kubeadm](./kubeadm/setup.md)
 ## How To Deploy
 
 * build projects
-* `mvn clean install`
+`mvn clean install`
 * build docker images  
 `bash build.sh` 
 * push docker images  
