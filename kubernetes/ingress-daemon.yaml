@@ -44,5 +44,5 @@ spec:
                   fieldPath: metadata.namespace
           args:
             - /nginx-ingress-controller
-            - --default-backend-service=$(POD_NAMESPACE)/default-http-backend
+            - --default-backend-service=$(POD_NAMESPACE)/default-backend
 
