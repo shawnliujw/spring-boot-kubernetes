@@ -1,5 +1,8 @@
 ## Quick sample for building microservice with Spring Boot + Kubernetes
 
+## Setup Kubernetes Cluster
+See [Setup Kubernetes By Kubeadm](./kubeadm/setup.md)
+
 ## How To Deploy
 1. $ kubectl create clusterrolebinding admin --clusterrole=cluster-admin --serviceaccount=default:default
 2. `mvn clean install`
