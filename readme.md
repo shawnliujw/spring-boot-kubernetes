@@ -6,7 +6,7 @@ This project will show you how to setup kubernetes cluster by kubeadm , deploy s
 See [Setup Kubernetes By Kubeadm](./kubeadm/setup.md)
 ## Preparation  
 * create cluster role  
-`$ kubectl create clusterrolebinding admin --clusterrole=cluster-admin --serviceaccount=default:default` 
+`kubectl create clusterrolebinding admin --clusterrole=cluster-admin --serviceaccount=default:default` 
 * Init mongodb  
 `bash init-mongodb.sh`  
 * Prepare Ingress  
@@ -14,7 +14,7 @@ See [Setup Kubernetes By Kubeadm](./kubeadm/setup.md)
 ## How To Deploy
 
 * build projects
-* `mvn clean install`
+`mvn clean install`
 * build docker images  
 `bash build.sh` 
 * push docker images  
@@ -61,11 +61,11 @@ for other OS, [See More](https://www.telepresence.io/reference/install)
 
   
 ###Configure 
-1. generate env.json  
+* generate env.json  
 `telepresence --swap-deployment <service in k8s> --env-json service_env.json`
-2. load env in IDEA  
+* load env in IDEA  
 you will need to install the [Env File plugin](https://plugins.jetbrains.com/plugin/7861-envfile).
 load the `service_env.json` generated above
-3. debug your code as usual  
+* debug your code as usual  
 Refer To: [Using Telepresence with IntelliJ](https://www.telepresence.io/tutorials/intellij)
 
