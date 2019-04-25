@@ -33,6 +33,8 @@ swapoff /swapfile   && sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 
 # use Flannel as pod network plugin
 kubeadm init --pod-network-cidr=10.244.0.0/16  
+#--image-repository registry.cn-hangzhou.aliyuncs.com/google_containers   阿里云镜像
+#--image-repository gcr.akscn.io/google_containers    GCR 开源社镜像
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 
 #disable master node isolate
