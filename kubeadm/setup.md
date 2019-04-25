@@ -92,13 +92,6 @@ token:      xxxxxxxxx
 ```
 
 
-**Enable Metric**
---requestheader-client-ca-file=/etc/kubernetes/ssl/ca.pem
---requestheader-allowed-names=aggregator
---requestheader-extra-headers-prefix=X-Remote-Extra-
---requestheader-group-headers=X-Remote-Group
---requestheader-username-headers=X-Remote-User
-
 
 **Configure Dashboard**  
 
