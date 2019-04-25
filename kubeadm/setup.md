@@ -17,6 +17,15 @@ deb https://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 
 apt-get update && apt-get install -y kubelet kubeadm kubectl && apt-mark hold kubelet kubeadm kubectl 
+```  
+* 如果以上无法安装，可以切换国内源  
+```bash
+curl https://mirrors.aliyun.com/kubernetes/apt/doc/apt-key.gpg | apt-key add - 
+cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+deb https://mirrors.aliyun.com/kubernetes/apt/ kubernetes-xenial main
+EOF
+
+apt-get update
 ```
 **Init Cluster**  
 ```
