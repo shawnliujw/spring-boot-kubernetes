@@ -89,9 +89,20 @@ namespace:  11 bytes
 token:      xxxxxxxxx
 ```
 
-**Configure Dashboard Access**  
-Run `kubectl proxy`  
-access `http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/`  
+
+**Enable Metric**
+--requestheader-client-ca-file=/etc/kubernetes/ssl/ca.pem
+--requestheader-allowed-names=aggregator
+--requestheader-extra-headers-prefix=X-Remote-Extra-
+--requestheader-group-headers=X-Remote-Group
+--requestheader-username-headers=X-Remote-User
+
+
+**Configure Dashboard**  
+
+* `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml`
+* Run `kubectl proxy`  
+* access `http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/`  
 use the token generated above to login
 
 **Configure Docker**  
