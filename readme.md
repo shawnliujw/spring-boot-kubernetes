@@ -70,4 +70,4 @@ load the `service_env.json` generated above
 Refer To: [Using Telepresence with IntelliJ](https://www.telepresence.io/tutorials/intellij)
 
 ##Serverless  
-[Click Here](https://kubeless.io/docs/quick-start/) to see how to use [kuberless](https://kubeless.io/)
+[Click Here](https://github.com/shawnliujw/serverless-kubernetes-sample/blob/master/README.md) to check the samples
