@@ -62,10 +62,10 @@ for other OS, [See More](https://www.telepresence.io/reference/install)
   
 ####Configure 
 * generate env.json  
-`telepresence --swap-deployment <service in k8s> --env-json service_env.json`
+`telepresence --swap-deployment <service in k8s> --env-json service.env.json`
 * load env in IDEA  
 you will need to install the [Env File plugin](https://plugins.jetbrains.com/plugin/7861-envfile).
-load the `service_env.json` generated above
+load the `service.env.json` generated above
 * debug your code as usual  
 Refer To: [Using Telepresence with IntelliJ](https://www.telepresence.io/tutorials/intellij)
 
