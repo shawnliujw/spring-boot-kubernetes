@@ -1,10 +1,12 @@
 package pl.piomin.services.employee;
 
+import client.DepartmentServiceFeignConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 import pl.piomin.services.employee.repository.EmployeeRepository;
@@ -19,6 +21,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableDiscoveryClient
 @EnableMongoRepositories
 @EnableSwagger2
+@Import(DepartmentServiceFeignConfiguration.class)
 public class EmployeeApplication {
 
 	@Autowired
