@@ -44,7 +44,7 @@ add host to `/etc/hosts` with:
     
 ## How To Debug  With Telepresence
 
-####Install Telepresence  
+#### Install Telepresence  
 
 **OS X**
 ```
@@ -60,7 +60,7 @@ sudo apt install --no-install-recommends telepresence
 for other OS, [See More](https://www.telepresence.io/reference/install)
 
   
-####Configure 
+#### Configure 
 * generate env.json  
 `telepresence --swap-deployment <service in k8s> --env-json service.env.json`
 * load env in IDEA  
@@ -69,12 +69,12 @@ load the `service.env.json` generated above
 * debug your code as usual  
 Refer To: [Using Telepresence with IntelliJ](https://www.telepresence.io/tutorials/intellij)
 
-##Serverless  
+## Serverless  
 [Click Here](https://github.com/shawnliujw/serverless-kubernetes-sample/blob/master/README.md) to check the samples  
 
-##Monitor(Prometheus,Grafana,Alert)  
+## Monitor(Prometheus,Grafana,Alert)  
 
-###install 
+### install 
 `kubectl apply -f monitor/`
 ### access  
 * Prometheus  
