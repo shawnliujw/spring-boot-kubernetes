@@ -8,9 +8,7 @@ See [Setup Kubernetes By Kubeadm](./kubeadm/setup.md)
 * create cluster role  
 `kubectl create clusterrolebinding admin --clusterrole=cluster-admin --serviceaccount=default:default` 
 * Init mongodb  
-`bash init-mongodb.sh`  
-* Prepare Ingress  
-`bash init-ingress.sh`
+`kubectl apply -f kubernetes/mongodb`  
 ## How To Deploy
 
 * build projects
@@ -20,7 +18,9 @@ See [Setup Kubernetes By Kubeadm](./kubeadm/setup.md)
 * push docker images  
 `bash push.sh` **Please skip this step if you run locally**
 * deploy to cluster  
-`bash deploy.sh`  
+`kubectl apply -f kubernetes/projects`  
+* deploy ingress  
+`kubectl apply -f kubernetes/ingress.yaml`
 * configure host  
 run `kubectl cluster-info` to get  `cluster_ip`  
 add host to `/etc/hosts` with:

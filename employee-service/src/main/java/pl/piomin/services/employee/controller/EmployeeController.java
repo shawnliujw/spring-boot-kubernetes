@@ -27,7 +27,7 @@ public class EmployeeController {
 	@Autowired
 	DepartmentClient departmentClient;
 
-	@GetMapping("/hello/default")
+	@GetMapping("/hello")
 	public String hello() {
 		return "hello from employee";
 	}
