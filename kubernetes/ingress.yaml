@@ -5,7 +5,7 @@ metadata:
   namespace: kube-system
 spec:
   backend:
-    serviceName: default-backend
+    serviceName: default-http-backend
     servicePort: 80
   rules:
   - host: shawn.info
