@@ -15,5 +15,7 @@ public interface EmployeeClient {
 
 	@GetMapping("/organization/{organizationId}")
 	List<Employee> findByOrganization(@PathVariable("organizationId") String organizationId);
-	
+
+	@GetMapping("/hello")
+	String hello();
 }

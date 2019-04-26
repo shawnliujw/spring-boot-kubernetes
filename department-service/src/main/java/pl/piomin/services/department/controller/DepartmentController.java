@@ -32,6 +32,16 @@ public class DepartmentController {
 		LOGGER.info("Department add: {}", department);
 		return repository.save(department);
 	}
+
+	@GetMapping("/hello")
+	public String hello() {
+		return "hello from department";
+	}
+
+	@GetMapping("/hello/employee")
+	public String helloE() {
+		return employeeClient.hello();
+	}
 	
 	@GetMapping("/{id}")
 	public Department findById(@PathVariable("id") String id) {

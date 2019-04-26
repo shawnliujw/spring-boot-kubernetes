@@ -49,7 +49,11 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>pl.piomin.services</groupId>
+            <artifactId>department-service-api</artifactId>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>

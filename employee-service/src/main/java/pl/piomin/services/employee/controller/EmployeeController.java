@@ -2,6 +2,7 @@ package pl.piomin.services.employee.controller;
 
 import java.util.List;
 
+import client.DepartmentClient;
 import client.Employee;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +22,21 @@ public class EmployeeController {
 	
 	@Autowired
 	EmployeeRepository repository;
-	
+
+	@Autowired
+	DepartmentClient departmentClient;
+
+	@GetMapping("/hello")
+	public String hello() {
+		return "hello from employee";
+	}
+
+	@GetMapping("/hello/department")
+	public String helloD() {
+		return departmentClient.hello();
+	}
+
+
 	@PostMapping("/")
 	public Employee add(@RequestBody Employee employee) {
 		LOGGER.info("Employee add: {}", employee);
@@ -30,7 +45,7 @@ public class EmployeeController {
 	
 	@GetMapping("/{id}")
 	public Employee findById(@PathVariable("id") String id) {
-		LOGGER.info("Employee find: id={}", id);
+		LOGGER.info("Employee find: id111111={}", id);
 		return repository.findById(id).get();
 	}
 	
