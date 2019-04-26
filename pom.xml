@@ -34,12 +34,12 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
+                <groupId>pl.piomin.services</groupId>
                 <artifactId>employee-service-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
+                <groupId>pl.piomin.services</groupId>
                 <artifactId>department-service-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
