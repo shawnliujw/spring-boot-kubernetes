@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import org.springframework.web.client.RestTemplate;
 import pl.piomin.services.employee.repository.EmployeeRepository;
 
 @RestController
@@ -26,13 +27,15 @@ public class EmployeeController {
 	@Autowired
 	DepartmentClient departmentClient;
 
-	@GetMapping("/hello")
+	@GetMapping("/hello/default")
 	public String hello() {
 		return "hello from employee";
 	}
 
+
 	@GetMapping("/hello/department")
 	public String helloD() {
+		System.out.println("call /hello/department");
 		return departmentClient.hello();
 	}
 

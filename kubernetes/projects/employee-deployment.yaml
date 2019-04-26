@@ -35,6 +35,8 @@ spec:
             secretKeyRef:
               name: mongodb
               key: database-password
+        - name: KUBERNETES_NAMESPACE
+          value: default
 ---
 apiVersion: v1
 kind: Service

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 
-@FeignClient(name = "department")
+@FeignClient(name = "department",path = "department")
 public interface DepartmentClient {
 
 	@GetMapping("/organization/{organizationId}")

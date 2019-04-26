@@ -28,11 +28,11 @@ add host to `/etc/hosts` with:
 
 ## How To Test
 * Init Data:  
-   `curl -d '{"id":1,"id":1,"name":"company name","address":"company address"}' -H 'Content-Type:application/json' micro.info/organization` 
+   `curl -d '{"id":1,"id":1,"name":"company name","address":"company address"}' -H 'Content-Type:application/json' shawn.info/organization/` 
    
-   `curl -d '{"organizationId":1,"id":1,"name":"department name"}' -H 'Content-Type:application/json' micro.info/department` 
+   `curl -d '{"organizationId":1,"id":1,"name":"department name"}' -H 'Content-Type:application/json' shawn.info/department/` 
    
-   `curl -d '{"organizationId":1,"departmentId":1,"id":1,"name":"employee"}' -H 'Content-Type:application/json' micro.info/employee` . 
+   `curl -d '{"organizationId":1,"departmentId":1,"id":1,"name":"employee"}' -H 'Content-Type:application/json' shawn.info/employee/` . 
     
 * check result:  
 
