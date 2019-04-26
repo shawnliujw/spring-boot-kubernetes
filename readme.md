@@ -70,4 +70,27 @@ load the `service.env.json` generated above
 Refer To: [Using Telepresence with IntelliJ](https://www.telepresence.io/tutorials/intellij)
 
 ##Serverless  
-[Click Here](https://github.com/shawnliujw/serverless-kubernetes-sample/blob/master/README.md) to check the samples
+[Click Here](https://github.com/shawnliujw/serverless-kubernetes-sample/blob/master/README.md) to check the samples  
+
+##Monitor(Prometheus,Grafana,Alert)  
+
+###install 
+`kubectl apply -f monitor/`
+### access  
+* Prometheus  
+
+`kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090`  
+Then access via `http://localhost:9090`
+
+* Grafana
+
+`kubectl --namespace monitoring port-forward svc/grafana 3000`  
+Then access via http://localhost:3000 and use the default grafana user:password of `admin:admin`.
+
+* Alert Manager
+
+`kubectl --namespace monitoring port-forward svc/alertmanager-main 9093`  
+Then access via    `http://localhost:9093`
+
+
+See more [here](https://github.com/coreos/kube-prometheus)
