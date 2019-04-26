@@ -35,7 +35,7 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 echo "Config Ingress"
 
 kubectl apply -f https://raw.githubusercontent.com/shawnliujw/spring-boot-kubernetes/master/kubernetes/ingress-default-backend.yaml
-kubectl apply -f https://raw.githubusercontent.com/shawnliujw/spring-boot-kubernetes/master/kubernetes/ingress-daemo.yaml
+kubectl apply -f https://raw.githubusercontent.com/shawnliujw/spring-boot-kubernetes/master/kubernetes/ingress-daemon.yaml
 kubectl apply -f https://raw.githubusercontent.com/shawnliujw/spring-boot-kubernetes/master/kubernetes/ingress.yaml
 
 echo "Configure Dashboard"
