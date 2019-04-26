@@ -13,7 +13,6 @@ spec:
     spec:
       terminationGracePeriodSeconds: 60
       hostNetwork: true
-      serviceAccountName: cluster-admin
       containers:
         - image: gcr.akscn.io/google_containers/nginx-ingress-controller:0.9.0-beta.11
           name: nginx-ingress-lb

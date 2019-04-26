@@ -13,7 +13,7 @@ spec:
       terminationGracePeriodSeconds: 60
       containers:
         - name: default-backend
-          image: shawnliu/k8s-default-backend:1.0
+          image: gcr.akscn.io/google_containers/defaultbackend:1.0
           livenessProbe:
             httpGet:
               path: /healthz

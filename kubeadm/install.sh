@@ -32,12 +32,18 @@ kubectl taint nodes --all node-role.kubernetes.io/master-
 echo "Install Network Plugin"
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 
+echo "Config Ingress"
+
+kubectl apply -f https://raw.githubusercontent.com/shawnliujw/spring-boot-kubernetes/master/kubernetes/ingress-default-backend.yaml
+kubectl apply -f https://raw.githubusercontent.com/shawnliujw/spring-boot-kubernetes/master/kubernetes/ingress-daemo.yaml
+kubectl apply -f https://raw.githubusercontent.com/shawnliujw/spring-boot-kubernetes/master/kubernetes/ingress.yaml
 
 echo "Configure Dashboard"
 
 kubectl apply -f https://raw.githubusercontent.com/shawnliujw/spring-boot-kubernetes/master/kubeadm/kubernetes-dashboard.yaml
 
 kubectl apply -f https://raw.githubusercontent.com/shawnliujw/spring-boot-kubernetes/master/kubeadm/admin-role.yaml
+
 
 
 echo "Print Access Token"
