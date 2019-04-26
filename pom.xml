@@ -16,12 +16,12 @@
         <version>2.0.0.RELEASE</version>
     </parent>
     <modules>
+        <module>employee-service-api</module>
         <module>employee-service</module>
         <module>department-service</module>
+        <module>department-service-api</module>
         <module>organization-service</module>
         <module>gateway-service</module>
-        <module>employee-service-api</module>
-        <module>department-service-api</module>
     </modules>
 
     <dependencyManagement>
