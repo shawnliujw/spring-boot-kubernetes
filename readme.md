@@ -75,24 +75,3 @@ Refer To: [Using Telepresence with IntelliJ](https://www.telepresence.io/tutoria
 ## Monitor(Prometheus,Grafana,Alert)  
 Click [Here](https://github.com/shawnliujw/kubeadm-kubernetes/blob/master/README.md)
 
-### install 
-`kubectl apply -f monitor/`
-### access  
-* Prometheus  
-
-`kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090`  
-Then access via `http://localhost:9090`
-
-* Grafana
-
-`kubectl --namespace monitoring port-forward svc/grafana 3000`  
-Then access via http://localhost:3000 and use the default grafana user:password of `admin:admin`.
-
-* Alert Manager
-
-`kubectl --namespace monitoring port-forward svc/alertmanager-main 9093`  
-Then access via    `http://localhost:9093`
-
-
-See more [here](https://github.com/coreos/kube-prometheus)
->>>>>>> 58967bfcf65d7298c1c5d15f065c4710d83cab00
