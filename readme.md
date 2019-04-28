@@ -3,7 +3,7 @@
 This project will show you how to setup kubernetes cluster by kubeadm , deploy spring boot micro service, and how to debug your code
 
 ## Setup Kubernetes Cluster
-See [Setup Kubernetes By Kubeadm](./kubeadm/setup.md)
+See [Setup Kubernetes By Kubeadm](https://github.com/shawnliujw/kubeadm-kubernetes/blob/master/README.md)
 ## Preparation  
 * create cluster role  
 `kubectl create clusterrolebinding admin --clusterrole=cluster-admin --serviceaccount=default:default` 
@@ -73,24 +73,4 @@ Refer To: [Using Telepresence with IntelliJ](https://www.telepresence.io/tutoria
 [Click Here](https://github.com/shawnliujw/serverless-kubernetes-sample/blob/master/README.md) to check the samples  
 
 ##Monitor(Prometheus,Grafana,Alert)  
-
-###install 
-`kubectl apply -f monitor/`
-### access  
-* Prometheus  
-
-`kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090`  
-Then access via `http://localhost:9090`
-
-* Grafana
-
-`kubectl --namespace monitoring port-forward svc/grafana 3000`  
-Then access via http://localhost:3000 and use the default grafana user:password of `admin:admin`.
-
-* Alert Manager
-
-`kubectl --namespace monitoring port-forward svc/alertmanager-main 9093`  
-Then access via    `http://localhost:9093`
-
-
-See more [here](https://github.com/coreos/kube-prometheus)
+Click [Here](https://github.com/shawnliujw/kubeadm-kubernetes/blob/master/README.md)
