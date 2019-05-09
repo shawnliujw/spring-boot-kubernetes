@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: employee
-        image: registry.cn-hangzhou.aliyuncs.com/shawn_private/employee:1.1
+        image: registry.cn-hangzhou.aliyuncs.com/shawn_repo/employee:1.1
         ports:
         - containerPort: 8080
         env:
